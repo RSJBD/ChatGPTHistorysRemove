@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-04T17:18:30 IST" name="Default suite" finished-at="2023-07-04T17:18:39 IST" duration-ms="8573">
+    <groups>
+    </groups>
+    <test started-at="2023-07-04T17:18:30 IST" name="Default test" finished-at="2023-07-04T17:18:39 IST" duration-ms="8573">
+      <class name="remove.proxy">
+        <test-method is-config="true" signature="setup()[pri:0, instance:remove.proxy@43dac38f]" started-at="2023-07-04T17:18:30 IST" name="setup" finished-at="2023-07-04T17:18:35 IST" duration-ms="4813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="flipkartSecurityTest()[pri:0, instance:remove.proxy@43dac38f]" started-at="2023-07-04T17:18:35 IST" name="flipkartSecurityTest" finished-at="2023-07-04T17:18:39 IST" duration-ms="3522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkartSecurityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:remove.proxy@43dac38f]" started-at="2023-07-04T17:18:39 IST" name="tearDown" finished-at="2023-07-04T17:18:39 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- remove.proxy -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
