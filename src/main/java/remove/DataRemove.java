@@ -39,8 +39,13 @@ public class DataRemove {
 
 
 
-
+        page.waitForLoadState(LoadState.NETWORKIDLE);//wait for after redirect complete//Without redirect dont use networkidel
 		//	      page.navigate("https://chat.openai.com/");
+		Locator byRoleOkey = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Okay, let’s go"));
+		if (byRoleOkey.isVisible()) {
+			byRoleOkey.click();
+		}
+		
 		Locator byRole = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next"));
 		if (byRole.isVisible()) {
 			byRole.click();
@@ -118,23 +123,19 @@ public class DataRemove {
 		Locator del = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete"));
 		
 		
-		while (true) {
+		while (firstEle.isEnabled()) {
 			firstEle.click();
 			delIcon.click();
 			del.click();
 			Thread.sleep(3000);
 			
-			if (true!=firstEle.isEnabled()) {
-				break;
-			}
+//			if (true!=firstEle.isEnabled()) {
+//				break;
+//			}
 		}
 		
-		
-		
-		
-		
-		
-		
+
+		playwright.close();
 		
 		
 		
